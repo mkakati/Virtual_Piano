@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Piano</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="welcome-screen">
+            <h1> Welcome to Virtual Piano</h1>
+            <h3> Enter name to access the music world</h3>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Name" id="name-input">
+                <button> Go !</button>
+                <p></p>
+                
+            </div>
+        </section>
+        <div id="playList" class="hidden">
+            <h3>Playlist</h3>
+            <ul id="songList">
+                <li id="songList1">Papon</li>
+                <li id="songList2">Party Song</li>
+                
+            </ul>
+        </div>
+        <div class="main hidden">
+            <header>
+                <div class="right floated user-name"> </div>
+            </header>
+            <section class="content">
+                <audio></audio>
+
+                <table id="songs">
+                    <thead class="list-headers">
+                        <tr>
+                            <td> Title </td> 
+                            <td> Artist </td>
+                            <td> Album </td>
+                            <td> Duration </td>
+                        </tr>
+                    </thead>
+                    <tbody class="song-list">
+                    </tbody>
+                </table>
+                
+                <div class="current-song-wrapper">
+                <img src="img/Papon.jpg" class="current-song-image">
+                <div>
+                <p class="current-song-name"></p>
+                <p class="current-song-album"></p>
+                </div>
+                </div>
+        
+            </section>
+            <footer>
+                <div class="controls">
+                    <div class="player-buttons">
+                      <i class="fa fa-random clickable disabled" aria-hidden="true"></i>
+                      <i class="fa fa-step-backward clickable" aria-hidden="true"></i>
+                      <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                      <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
+                      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+                      <a href="piano.html" id="inst">PIANO</a>
+                    </div>
+
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
