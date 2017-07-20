@@ -106,7 +106,7 @@ function toggleSong()
         'album': 'Barfi',
         'duration': '4:26',
         'fileName': 'songs/kyon.mp3',
-        'albumArt': 'img/papon.jpg',
+        'albumArt': 'img/kyon.jpg',
         'songNumber': 3
     },
     {
@@ -115,7 +115,7 @@ function toggleSong()
         'album': 'Dum Laga Ke Haisha',
         'duration': '5:22',
         'fileName': 'songs/moh.mp3',
-        'albumArt': 'img/papon.jpg',
+        'albumArt': 'img/moh.jpg',
         'songNumber': 4
     }]
 
